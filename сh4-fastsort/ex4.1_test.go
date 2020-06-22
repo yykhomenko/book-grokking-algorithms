@@ -12,17 +12,17 @@ func Test_sum(t *testing.T) {
 		want int
 	}{
 		{
-			name: "valid sum empty arr",
+			name: "valid sum of empty",
 			args: struct{ arr []int }{arr: []int{}},
 			want: 0,
 		},
 		{
-			name: "valid sum one element in arr",
+			name: "valid sum of one element",
 			args: struct{ arr []int }{arr: []int{42}},
 			want: 42,
 		},
 		{
-			name: "valid sum",
+			name: "valid sum of several elements",
 			args: struct{ arr []int }{arr: []int{1, 2, 3, 4, 5}},
 			want: 15,
 		},

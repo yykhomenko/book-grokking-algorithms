@@ -10,14 +10,6 @@ func bSearch(arr []int, item, low, high int) int {
 		return -1
 	}
 
-	// if low == high {
-	// 	if arr[low] == item {
-	// 		return low
-	// 	} else {
-	// 		return -1
-	// 	}
-	// }
-
 	mid := (high - low) / 2
 	guess := arr[mid]
 

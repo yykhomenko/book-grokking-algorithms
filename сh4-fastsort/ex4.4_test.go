@@ -45,17 +45,17 @@ func Test_binarySearch(t *testing.T) {
 			},
 			want: 2,
 		},
-		// {
-		// 	name: "valid search of several - item not exist",
-		// 	args: struct {
-		// 		arr  []int
-		// 		item int
-		// 	}{
-		// 		arr:  []int{1, 2, 3, 4, 5},
-		// 		item: 42,
-		// 	},
-		// 	want: -1,
-		// },
+		{
+			name: "valid search of several - item not exist",
+			args: struct {
+				arr  []int
+				item int
+			}{
+				arr:  []int{1, 2, 3, 4, 5},
+				item: 42,
+			},
+			want: -1,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

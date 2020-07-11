@@ -1,4 +1,4 @@
-package ch4_fastsort
+package ch4_quick
 
 func sum(arr []int) int {
 	switch len(arr) {

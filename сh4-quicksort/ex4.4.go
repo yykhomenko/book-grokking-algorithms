@@ -11,7 +11,7 @@ func bSearch(arr []int, item, lo, hi int) int {
 	mid := lo + (hi-lo)/2
 	switch {
 	case arr[mid] > item:
-		return bSearch(arr, item, lo, mid)
+		return bSearch(arr, item, lo, mid-1)
 	case arr[mid] < item:
 		return bSearch(arr, item, mid+1, hi)
 	default:

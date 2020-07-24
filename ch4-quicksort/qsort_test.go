@@ -25,3 +25,13 @@ func TestQsort(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkQsort(b *testing.B) {
+	arr := []int{-1, 50, -6, 80, 90, 11, 14, 17, -20, 23, 24}
+
+	b.StartTimer()
+	for i := 0; i < b.N; i++ {
+		qsort(arr)
+	}
+	b.StopTimer()
+}

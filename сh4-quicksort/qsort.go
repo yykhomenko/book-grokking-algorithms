@@ -17,6 +17,5 @@ func qsort(slice []int) []int {
 		}
 	}
 
-	result := append(less, pivot)
-	return append(result, greater...)
+	return append(append(qsort(less), pivot), qsort(greater)...)
 }
